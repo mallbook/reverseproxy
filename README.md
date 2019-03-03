@@ -36,3 +36,12 @@ The file contents are as follows:
     }
 }
 ```
+|Key|Description|
+|:--|:--|
+|reverseProxy|Fixed key, represent reverse proxy|
+|rootPath|The root path of the reverse proxy|
+|targetPath|The target path of the reverse proxy|
+|proxyPass|The all backends of the reverse proxy|
+|routes|The all routes of the reverse proxy|
+|subPath|The sub path of the reverse proxy|
+|httpMethod|The http method of the reverse proxy, must use all uppercase, such as `GET`, `POST`, `PUT`, `DELETE`, `HEAD`, `PATCH`|
