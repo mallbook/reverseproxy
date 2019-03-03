@@ -36,6 +36,8 @@ The file contents are as follows:
     }
 }
 ```
+Note that `tokens` is a name that is easy to understand, and the names of the resources are generally used.  
+  
 |Key|Description|
 |:--|:--|
 |reverseProxy|Fixed key, represent reverse proxy|
