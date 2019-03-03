@@ -1,7 +1,7 @@
 # reverseproxy
 
 ## Installation
-```
+```sh
 go get -u github.com/mallbook/reverseproxy
 ```
 
@@ -25,7 +25,7 @@ The file contents are as follows:
         "tokens": {
             "rootPath": "/iamservice/v1/auth/tokens",
             "targetPath": "/v3/auth/tokens",
-            "proxyPass": ["https://127.0.0.1:5000"],
+            "proxyPass": ["https://192.168.1.2:5000"],
             "routes": [
                 {
                     "subPath": "/{tokenID}",
@@ -37,6 +37,10 @@ The file contents are as follows:
 }
 ```
 Note that `tokens` is a name that is easy to understand, and the names of the resources are generally used.  
+```
+GET https://192.168.1.1:4000/iamservice/v1/auth/tokens/{tokenID}  
+==> GET https://192.168.1.2:5000/v3/auth/tokens/{tokenID}
+```
   
 |Key|Description|
 |:--|:--|
